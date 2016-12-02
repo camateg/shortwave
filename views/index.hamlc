@@ -1,0 +1,29 @@
+%html
+	%head
+		%meta{:name=>'viewport',:content=>'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+		%title
+			Shortwave Search...	
+		%link{:href=>'//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css',:rel=>'stylesheet'}
+		%link{:href=>'/index.css',:rel=>'stylesheet'}
+		%script{:src=>'//code.jquery.com/jquery-1.10.2.min.js'}
+		%script{:src=>'//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'}
+		%script{:src=>'index.js'}
+	%body
+		#selections
+			.img-holder
+				%img{:src=>'/shortwave.jpg'}
+			%form{:action=>'/shows'}
+				.form-group
+					%label{:for=>'min'}
+						Min Freq (kHz)
+					%input{:class=>'form-control',:name=>'min',:id=>'min',:type=>'tel'}
+				.form-group
+					%label{:for=>'max'}
+						Max Freq (kHz)
+					%input{:class=>'form-control',:name=>'max',:id=>'max',:type=>'tel'}
+				%select{:class=>'form-control',:name=>'lang'}
+					%option{:value=>'English'}
+						Loading Languages...	
+				.go-button
+					%button{:type=>'submit',:class=>'btn btn-default'}
+						go
