@@ -3,6 +3,6 @@ Shortwave
 
 Mobile and json views for shortwaveschedule.com
 
-http://shortwave.herokuapp.com/
+https://shortwave.herokuapp.com/
 
-http://shortwave.herokuapp.com/shows/json
+https://shortwave.herokuapp.com/shows/json
